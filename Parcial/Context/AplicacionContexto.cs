@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ProyectoBackendMiguelVillca.Models;
 using WebApplication2.Models;
 
 namespace WebApplication2.Context
@@ -9,8 +10,8 @@ namespace WebApplication2.Context
             (DbContextOptions<AplicacionContexto> options)
             : base(options) { }
 
-        public DbSet<Aviones> Disco { get; set; }
-        public DbSet<Hangares> Musica { get; set; }
-        //public DbSet<Universidad> Universidad { get; set; }
+        public DbSet<Aviones> Aviones { get; set; }
+        public DbSet<Hangares> Hangares { get; set; }
+        public DbSet<Pilotos> Pilotos { get; set; }
     }
 }
